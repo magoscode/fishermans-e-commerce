@@ -1,0 +1,25 @@
+{% autoescape off %}
+Moin,
+
+Danke für Ihre Registrierung.
+
+Bitte bestätigen Sie Ihre Mail:
+
+http://{{domain}}{% url 'email-verification' uidb64=uid token=token %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endautoescape %}

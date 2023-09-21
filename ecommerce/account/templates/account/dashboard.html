@@ -1,0 +1,81 @@
+{% include "store/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+<style>
+
+    body {
+
+        background-color: gray;
+    }
+</style>
+
+<body>
+
+    <br>
+
+    <div class = "container bg-white shadow-md p-5 form-layout ">
+
+        <h3>Willkommen! {{user}}</h3>
+        <hr>
+
+        <p>Das ist Ihr Dashboard mit folgenden Funktionen:</p>
+
+        <li>Bestellungen verfolgen</li>
+        <li>Benutzerkonto verwalten</li>
+        
+
+
+
+    </div>
+
+    <br>
+
+    <div class = "container bg-white shadow-md p-5 form-layout ">
+
+        <h3>Bestellungen verfolgen</h3>
+        <hr>
+        <br>
+
+        <a class="btn btn-primary navbar-btn text-white" type="button"  href="{% url 'track-orders' %}"> Meine Bestellungen </a>
+
+
+
+    </div>
+    <br>
+
+    <div class = "container bg-white shadow-md p-5 form-layout ">
+
+        <h3>Benutzerkonto verwalten</h3>
+        <hr>
+        <br>
+        <a class="btn btn-primary navbar-btn text-white" type="button"  href="{% url 'profile-management' %}"> Benutzer verwalten </a>
+        <br><br>
+
+        <a class="btn btn-danger navbar-btn text-white" type="button"  href="{% url 'user-logout' %}"> Abmelden </a>
+
+
+    </div>
+
+    <br>
+
+    <div class = "container bg-white shadow-md p-5 form-layout ">
+
+        <h3>Versand verwalten</h3>
+        <hr>
+        <br>
+        <a class="btn btn-primary navbar-btn text-white" type="button"  href="{% url 'manage-shipping' %}"> Versand verwalten </a>
+        <br>
+
+
+    </div>
+
+
+
+
+{% endblock %}
