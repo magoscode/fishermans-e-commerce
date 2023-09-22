@@ -145,7 +145,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = 'True'
 
-EMAIL_HOST_USER = 'privatnach@gmail.com'
-EMAIL_HOST_PASSWORD = 'xjrktoltkjigkwpx' #app password from GMAIL
+EMAIL_HOST_USER = 'a@gmail.com' #change it
+EMAIL_HOST_PASSWORD = '......' #app password from GMAIL # change it
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
